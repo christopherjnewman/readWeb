@@ -24,20 +24,7 @@ $( "html" ).mousemove(function( event )
 	var height = $(this).height();
 	if (event.pageX > width/1.5) 
 	{
-        alert("jQuery est prêt !");
-
-     	$("img").attr('src','/img/logoLibrCorner.png');   
-		});
-
-
-     //    $(this).attr({
-     //    src: $(this).attr('data-other-src'), 'data-other-src': $(this).attr('src') 
-    	// })
-
-     //    $("img").mouseover(function() { 
-     //        var src = $(this).attr("src").match(/[^\.]+/) + "over.gif";
-     //        $(this).attr("src", src);
-     //    })
+		$("img").attr("src","img/logoLibrCorner.png")
     }
 });
 
