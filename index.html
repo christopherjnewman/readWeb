@@ -10,7 +10,7 @@
   	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 
 </head>
-<body class="theOne" style="background-color: rgb(254, 244, 0); ">
+<body class="theOne" style="background-color: rgb(254, 244, 0);">
 
 <div class="drop">
         <img src="img/logoLibr.png"/>
@@ -22,10 +22,27 @@ $( "html" ).mousemove(function( event )
 {
 	var width = $(this).width();
 	var height = $(this).height();
-	if (event.pageX > width/1.5) 
+	
+	if (event.pageX < width/2 && event.pageY < height/2) 
 	{
-		$("img").attr("src","img/logoLibrCorner.png")
+		$("img").attr("src","img/logoLibrTopLeft.png")
     }
+
+    if (event.pageX > width/2 && event.pageY < height/2) 
+	{
+		$("img").attr("src","img/logoLibrTopRight.png")
+    }
+
+    if (event.pageX < width/2 && event.pageY > height/2) 
+	{
+		$("img").attr("src","img/logoLibrBottomLeft.png")
+    }
+
+    if (event.pageX > width/2 && event.pageY > height/2) 
+	{
+		$("img").attr("src","img/logoLibrBottomRight.png")
+    }
+
 });
 
 
