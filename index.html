@@ -8,10 +8,26 @@
 	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
   	<link rel="stylesheet" href="styles/main.css">
 </head>
-<body>
+<body style="background-color: rgb(254, 244, 0); ">
+<script>
+jQuery(function($) {
+    var currentMousePos = { x: -1, y: -1 };
+    $(document).mousemove(function(event) {
+        currentMousePos.x = event.pageX;
+        currentMousePos.y = event.pageY;
+    });
 
-<h1>and go to branch</h1>
-<h2>and go to branch</h2>
-	 
+    // ELSEWHERE, your code that needs to know the mouse position without an event
+    if (currentMousePos.x < 10) {
+        // ....
+    }
+});
+
+</script>
+
+<div class="drop" style=" margin-left: auto; margin-right: auto; width:10vw; height:10vh; margin-top: 45vh;">
+        <img src="img/logoLibrCorner.png"/>
+</div>
 </body>
 </html>
+
