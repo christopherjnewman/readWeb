@@ -7,27 +7,43 @@
 	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
   	<link rel="stylesheet" href="styles/main.css">
-</head>
-<body style="background-color: rgb(254, 244, 0); ">
-<script>
-jQuery(function($) {
-    var currentMousePos = { x: -1, y: -1 };
-    $(document).mousemove(function(event) {
-        currentMousePos.x = event.pageX;
-        currentMousePos.y = event.pageY;
-    });
+  	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 
-    // ELSEWHERE, your code that needs to know the mouse position without an event
-    if (currentMousePos.x < 10) {
-        // ....
+</head>
+<body class="theOne" style="background-color: rgb(254, 244, 0); ">
+
+<div class="drop">
+        <img src="img/logoLibr.png"/>
+</div>
+
+<script>
+
+$( "html" ).mousemove(function( event ) 
+{
+	var width = $(this).width();
+	var height = $(this).height();
+	if (event.pageX > width/1.5) 
+	{
+        alert("jQuery est prêt !");
+
+     	$("img").attr('src','/img/logoLibrCorner.png');   
+		});
+
+
+     //    $(this).attr({
+     //    src: $(this).attr('data-other-src'), 'data-other-src': $(this).attr('src') 
+    	// })
+
+     //    $("img").mouseover(function() { 
+     //        var src = $(this).attr("src").match(/[^\.]+/) + "over.gif";
+     //        $(this).attr("src", src);
+     //    })
     }
 });
 
+
 </script>
 
-<div class="drop" style=" margin-left: auto; margin-right: auto; width:10vw; height:10vh; margin-top: 45vh;">
-        <img src="img/logoLibrCorner.png"/>
-</div>
 </body>
 </html>
 
