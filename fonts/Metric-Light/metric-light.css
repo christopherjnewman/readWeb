@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'MetricLight';
+    src: url('metric-light.eot');
+    src: url('metric-light.eot') format('embedded-opentype'),
+         url('metric-light.woff2') format('woff2'),
+         url('metric-light.woff') format('woff'),
+         url('metric-light.ttf') format('truetype'),
+         url('metric-light.svg#MetricLight') format('svg');
+}

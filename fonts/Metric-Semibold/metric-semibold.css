@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'MetricSemibold';
+    src: url('metric-semibold.eot');
+    src: url('metric-semibold.eot') format('embedded-opentype'),
+         url('metric-semibold.woff2') format('woff2'),
+         url('metric-semibold.woff') format('woff'),
+         url('metric-semibold.ttf') format('truetype'),
+         url('metric-semibold.svg#MetricSemibold') format('svg');
+}

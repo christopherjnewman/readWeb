@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'MetricMedium';
+    src: url('metric-medium.eot');
+    src: url('metric-medium.eot') format('embedded-opentype'),
+         url('metric-medium.woff2') format('woff2'),
+         url('metric-medium.woff') format('woff'),
+         url('metric-medium.ttf') format('truetype'),
+         url('metric-medium.svg#MetricMedium') format('svg');
+}

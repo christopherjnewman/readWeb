@@ -2,19 +2,66 @@
 
 <head>
   	<meta charset="utf-8">
-  	<title>Addr</title>
+  	<title>Libr</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />    
 	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
   	<link rel="stylesheet" href="styles/main.css">
   	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 
+  	<style type="text/css">
+		@font-face {
+    		font-family: 'MetricRegular';
+    		src: url('fonts/Metric-Regular/metric-regular.eot');
+    		src: url('fonts/Metric-Regular/metric-regular.eot') format('embedded-opentype'),
+         	url('fonts/Metric-Regular/metric-regular.woff2') format('woff2'),
+         	url('fonts/Metric-Regular/metric-regular.woff') format('woff'),
+         	url('fonts/Metric-Regular/metric-regular.ttf') format('truetype'),
+         	url('fonts/Metric-Regular/metric-regular.svg#MetricRegular') format('svg');
+		}			
+
+		@font-face {
+         	font-family: 'MetricMedium';
+   			src: url('fonts/Metric-Medium/metric-medium.eot');
+  			src: url('fonts/Metric-Medium/metric-medium.eot') format('embedded-opentype'),
+         	url('fonts/Metric-Medium/metric-medium.woff2') format('woff2'),
+         	url('fonts/Metric-Medium/metric-medium.woff') format('woff'),
+         	url('fonts/Metric-Medium/metric-medium.ttf') format('truetype'),
+         	url('fonts/Metric-Medium/metric-medium.svg#MetricMedium') format('svg');
+		}
+
+		@font-face {
+    		font-family: 'MetricSemibold';
+    		src: url('fonts/Metric-Semibold/metric-semibold.eot');
+   			src: url('fonts/Metric-Semibold/metric-semibold.eot') format('embedded-opentype'),
+         	url('fonts/Metric-Semibold/metric-semibold.woff2') format('woff2'),
+         	url('fonts/Metric-Semibold/metric-semibold.woff') format('woff'),
+         	url('fonts/Metric-Semibold/metric-semibold.ttf') format('truetype'),
+         	url('fonts/Metric-Semibold/metric-semibold.svg#MetricSemibold') format('svg');
+		}
+
+		@font-face {
+   		 font-family: 'MetricLight';
+    	src: url('fonts/Metric-Light/metric-light.eot');
+    	src: url('fonts/Metric-Light/metric-light.eot') format('embedded-opentype'),
+         url('fonts/Metric-Light/metric-light.woff2') format('woff2'),
+         url('fonts/Metric-Light/metric-light.woff') format('woff'),
+         url('fonts/Metric-Light/metric-light.ttf') format('truetype'),
+         url('fonts/Metric-Light/metric-light.svg#MetricLight') format('svg');
+		}
+	</style>
 </head>
-<body class="theOne" style="background-color: rgb(254, 244, 0);">
+<body class="theOne">
 
 <div class="drop">
-        <img src="img/logoLibr.png"/>
+        <img src="img/logoLibrTopLeft.png"/>
 </div>
+
+<a href="http://bit.ly/1snBy7g" target="_blank"> 
+	<h3>
+	Play Video
+	</h3> 
+</a>
 
 <script>
 
@@ -25,22 +72,22 @@ $( "html" ).mousemove(function( event )
 	
 	if (event.pageX < width/2 && event.pageY < height/2) 
 	{
-		$("img").attr("src","img/logoLibrTopLeft.png")
+		$("img").attr("src","img/logoLibrBottomRight.png")
     }
 
     if (event.pageX > width/2 && event.pageY < height/2) 
 	{
-		$("img").attr("src","img/logoLibrTopRight.png")
+		$("img").attr("src","img/logoLibrBottomLeft.png")
     }
 
     if (event.pageX < width/2 && event.pageY > height/2) 
 	{
-		$("img").attr("src","img/logoLibrBottomLeft.png")
+		$("img").attr("src","img/logoLibrTopRight.png")
     }
 
     if (event.pageX > width/2 && event.pageY > height/2) 
 	{
-		$("img").attr("src","img/logoLibrBottomRight.png")
+		$("img").attr("src","img/logoLibrTopLeft.png")
     }
 
 });
