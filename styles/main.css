@@ -29,34 +29,35 @@ img{
 	display: block;
 }
 
+h3{
+	text-align: center;
+}
+
 #logo{
-	width: 30vh;
+	width: 27vh;
 	height: auto;
 }
 
 .drop{
 	margin-left: auto; 
 	margin-right: auto; 
-	width: 30vh; 
+	width: 27vh; 
 	height: auto; 
-	margin-top: 30vh;
+	margin-top: 33vh;
 }
 
 #play{
-	margin-top: 12vh;
-	width: 8vh;
+	margin-top: 9vh;
+	width: 7vh;
 	height: auto;
 	margin-left: auto; 
 	margin-right: auto; 
-
 	opacity: 0.4;/* l'opacite que vous voulez au depart */
-   
 }
 
 
 #play:hover, #play:focus{
     opacity: 1; /* opacite au survol */
-
 }
 
 
